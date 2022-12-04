@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset='utf-8' lang="en">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='Dom.css'>
+    <link rel="shortcut icon" type="x-icon" href="pics/real gold.png">
+    <title>The Booktown </title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <img src="pics/real gold.png" width="40" height="45">
+            <a href="checkpointDom.html" style="color:#c4b45a;text-decoration: none;"><b>The <span
+                        style="color:rgb(252, 252, 252)">B</span>ook town</b></a>
+        </div>
+
+        <div class="threebar">
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input class="search-bar" type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Pick Genre</button>
+                <div class="dropdown-content">
+                    <a href="#"> Horror</a>
+                    <a href="#">Romance,novel</a>
+                    <a href="#">Psychology</a>
+                    <a href="#">Science fiction</a>
+                    <a href="#"> Documentaries </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Premium account <i class="fa-solid fa-money-check-dollar"></i></button>
+
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sign in !</button>
+                <div class="dropdown-content"> </div>
+            </div>
+        </div>
+        </div>
+    </header> <br>
+    <div class="bookdetails">
+        <div> <img src="pics/5days.jpg" height="180px" width="140">
+        </div>
+        <div class="description">
+            <h3>5 Days (Paperback)</h3> <br>
+            Douglas Kennedy (author) <br>
+            ★ ★ ★ ★ ★ 53 Reviews Sign in to write a review <br>
+            £8.99 £7.49 <br>
+            Paperback <br>
+            256 Pages / Published: 05/05/2016 <br>
+            Save £1.50 10+ in stock <br>
+            UK delivery within 5 days <br>
+            <br>
+            Your local Waterstones may have stock of this item. <br>
+            Please check by using Click & Collect <br>
+            <div data-ng-app="" data-ng-init="quantity=1;price=5">
+                Quantity: <input type="number" ng-model="quantity" min="0"><br>
+                Price: <input type="number" ng-model="price" min="0"> <br>
+                <p><b>Total in dollar:</b>$ {{quantity * price}}</p>
+            </div>
+            <div class="buttonspos">
+                <div>
+                    <button class="button"> <i class="fa-solid fa-cart-shopping"> Add to basket </i></button> <br> <br>
+                </div>
+                <div>
+                    <button class="button"><i onclick="myFunction(this)" class="fa-regular fa-heart"></i> add to my wish
+                        list
+                    </button><br>
+
+                    <script> function myFunction(x) {
+
+                        }</script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="domcheckpoint.js"></script>
+<script src="https://kit.fontawesome.com/b46a4ed4d2.js" crossorigin="anonymous"></script>
+
+</html>
